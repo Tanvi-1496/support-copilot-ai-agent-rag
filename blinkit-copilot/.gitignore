@@ -1,0 +1,31 @@
+node_modules/
+dist/
+__pycache__/
+.pytest_cache/
+.env
+*.env.local
+backend/data/*
+!backend/data/.gitkeep
+backend/evals/last_run.json
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated files
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+dist/
+
+# Local archive
+to paste to chatgpt.zip

@@ -1,0 +1,17 @@
+# Backend on Render. Frontend goes to Vercel (see README).
+services:
+  - type: web
+    name: support-copilot-api
+    runtime: docker
+    rootDir: backend
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false            # set to your Vercel URL, e.g. https://support-copilot.vercel.app
+      - key: APP_API_KEY
+        generateValue: true
