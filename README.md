@@ -26,29 +26,54 @@ The application uses a React frontend deployed on Vercel and a FastAPI backend d
 
 ## 📸 Application Screenshots
 
-<!-- SCREENSHOT PLACEHOLDER 1: Add docs/screenshots/dashboard.png -->
-<!-- Capture the main dashboard and navigation. -->
+
+
 ### 1. Application Dashboard
 
-<!-- Replace this placeholder with: ![Application Dashboard](docs/screenshots/dashboard.png) -->
+<img width="1916" height="1092" alt="image" src="https://github.com/user-attachments/assets/ab1427ff-7fc8-4295-84c7-e3cddbbcd818" />
 
-*Screenshot to be added.*
 
-<!-- SCREENSHOT PLACEHOLDER 2: Add docs/screenshots/agent-demo.png -->
-<!-- Capture a complete support conversation with policy evidence. -->
-### 2. AI Agent in Action
+### 2. Agentic AI: Multi-Step Planning & Decision-Making
 
-<!-- Replace this placeholder with: ![AI Agent in Action](docs/screenshots/agent-demo.png) -->
+*Demonstrating coordinated tool usage, evidence-based decisions, duplicate-action checks, and human-in-the-loop approval.*
+<img width="1917" height="1007" alt="image" src="https://github.com/user-attachments/assets/76dfaa1a-e9df-4977-b0b0-ac90dff47cc8" />
+<img width="835" height="702" alt="image" src="https://github.com/user-attachments/assets/6d224391-fefe-4e4b-881e-8a65083d4c4a" />
+<img width="835" height="687" alt="image" src="https://github.com/user-attachments/assets/77840413-227e-49d9-9b96-cbc67aadc3ba" />
 
-*Screenshot to be added.*
 
-<!-- SCREENSHOT PLACEHOLDER 3: Add docs/screenshots/analytics.png -->
-<!-- Capture analytics, approvals, or execution traces. -->
-### 3. Operations and Observability
+### 3. Agentic AI Execution & Traceability
 
-<!-- Replace this placeholder with: ![Operations Dashboard](docs/screenshots/analytics.png) -->
+*Real-time agent reasoning, tool execution, and step-by-step traceability.*
+<img width="1567" height="293" alt="image" src="https://github.com/user-attachments/assets/81529c9a-df7b-4b04-afe3-ba157f6f0527" />
 
-*Screenshot to be added.*
+###  4. Agentic AI: Policy-Based Decision & Human Approval
+
+The agent retrieves the applicable policy, checks the order's refund status, determines the eligible ₹150 goodwill credit, and queues the action for human approval. The wallet credit remains pending and has not been executed.
+<img width="1916" height="1012" alt="image" src="https://github.com/user-attachments/assets/fa345eee-c6e5-46b0-bd26-f7bf0a3ded5a" />
+<img width="1917" height="1016" alt="image" src="https://github.com/user-attachments/assets/2ddfe129-5610-4c27-b667-c2980a3fbd35" />
+
+###  5. Hybrid RAG: Policy Retrieval & Grounded Answers
+
+*Retrieving relevant policy evidence to generate accurate, source-backed responses.*
+<img width="1911" height="1023" alt="image" src="https://github.com/user-attachments/assets/94b23421-e3e5-479f-ba04-e5a4f12e0455" />
+<img width="665" height="627" alt="image" src="https://github.com/user-attachments/assets/f260452b-3ae8-4854-9be0-9d7505402883" />
+
+### 6. LLM: Contextual Answers & Customer Support Guidance
+
+*Generating clear explanations and practical support guidance using a large language model.*
+<img width="1907" height="1022" alt="image" src="https://github.com/user-attachments/assets/b690b56a-4e76-45ea-935d-449bc240f1f5" />
+
+### 7. Operations Analytics: Orders, Refunds & Delivery Insights
+
+*An operational overview of order volumes, late deliveries, refund payouts, unresolved support tickets, city-level delivery performance, product issue trends, membership comparisons, and dark-store refund rates.*
+<img width="1917" height="1037" alt="image" src="https://github.com/user-attachments/assets/dd203ddb-33c5-4f24-8f77-da212d1f0134" />
+<img width="1907" height="1018" alt="image" src="https://github.com/user-attachments/assets/cad55799-5b7f-4719-9a08-070252a7d01c" />
+
+
+### 8. Conversation History & Session Tracking
+
+*Maintaining conversation context and enabling users to review previous support interactions.*
+<img width="1901" height="1017" alt="image" src="https://github.com/user-attachments/assets/9967d068-87d1-495a-aa62-680d08ba04e1" />
 
 ## ✨ Key Features
 
