@@ -1,127 +1,123 @@
 # 🛒 Support Copilot AI
 
-**An AI-powered customer support and operations assistant built with LLMs, Retrieval-Augmented Generation (RAG), AI agents, and human-in-the-loop workflows.**
+**An AI-powered customer support and operations assistant built with Gemini, Hybrid RAG, tool-calling agents, and human-in-the-loop workflows.**
 
-Support Copilot AI helps answer support questions, retrieve relevant policy information, analyze operational data, and propose actions with human approval.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?logo=vercel)](https://support-copilot-ai-agent-rag.vercel.app/)
+[![Backend API](https://img.shields.io/badge/Backend-Render-46E3B7?logo=render)](https://support-copilot-api-ri27.onrender.com/api/health)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![React](https://img.shields.io/badge/React-Vite-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Docker](https://img.shields.io/badge/Containerized-Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 
-It combines **Gemini, hybrid retrieval, tool calling, multi-agent workflows, and an interactive React dashboard** in one application.
+Support Copilot AI demonstrates how large language models, knowledge retrieval, and tool-using agents can assist with customer support and operational workflows. It combines policy-grounded answers, operational data access, execution traces, analytics, and approval-based actions in a web application.
 
----
+> **Project status:** Deployed demonstration application. This is an independent portfolio project and is not affiliated with, endorsed by, or connected to Blinkit's production systems.
 
-## 📌 Table of Contents
+## 🔗 Live Application
 
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [AI Modes](#-ai-modes)
-- [System Architecture](#-system-architecture)
-- [Technology Stack](#-technology-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Environment Configuration](#-environment-configuration)
-- [Testing](#-testing)
-- [Security and Guardrails](#-security-and-guardrails)
-- [Deployment](#-deployment)
-- [Limitations](#-limitations)
-- [Future Improvements](#-future-improvements)
+| Component | Link |
+|---|---|
+| Frontend | [Open Support Copilot AI](https://support-copilot-ai-agent-rag.vercel.app/) |
+| Backend health check | [Check API health](https://support-copilot-api-ri27.onrender.com/api/health) |
+| Interactive API documentation | [Explore API endpoints](https://support-copilot-api-ri27.onrender.com/docs) |
+| Source code | [GitHub Repository](https://github.com/Tanvi-1496/support-copilot-ai-agent-rag) |
 
----
+The application uses a React frontend deployed on Vercel and a FastAPI backend deployed on Render. Availability and response times depend on the hosting environment and configured external services.
 
-## 🎯 Overview
+## 📸 Application Screenshots
 
-Customer support systems often need to handle repetitive queries, search through policy documents, investigate operational issues, and recommend corrective actions.
+<!-- SCREENSHOT PLACEHOLDER 1: Add docs/screenshots/dashboard.png -->
+<!-- Capture the main dashboard and navigation. -->
+### 1. Application Dashboard
 
-Support Copilot AI explores how these workflows can be assisted by combining language models with retrieval, database tools, and approval-based automation.
+<!-- Replace this placeholder with: ![Application Dashboard](docs/screenshots/dashboard.png) -->
 
-The application provides four AI interaction modes:
+*Screenshot to be added.*
 
-1. **LLM:** Generates responses using a language model.
-2. **RAG:** Retrieves relevant information from a knowledge base before answering.
-3. **AI Agent:** Uses tools to investigate questions and retrieve relevant information.
-4. **Agentic AI:** Supports more structured, multi-step workflows involving multiple agents or tools.
+<!-- SCREENSHOT PLACEHOLDER 2: Add docs/screenshots/agent-demo.png -->
+<!-- Capture a complete support conversation with policy evidence. -->
+### 2. AI Agent in Action
 
-The project also includes an operations dashboard, execution traces, run history, feedback, and an approval workflow.
+<!-- Replace this placeholder with: ![AI Agent in Action](docs/screenshots/agent-demo.png) -->
 
-> **Important:** This is an independent demonstration project. It is not an official Blinkit product and does not connect to Blinkit's production systems.
+*Screenshot to be added.*
 
----
+<!-- SCREENSHOT PLACEHOLDER 3: Add docs/screenshots/analytics.png -->
+<!-- Capture analytics, approvals, or execution traces. -->
+### 3. Operations and Observability
+
+<!-- Replace this placeholder with: ![Operations Dashboard](docs/screenshots/analytics.png) -->
+
+*Screenshot to be added.*
 
 ## ✨ Key Features
 
-| Feature | Description |
-|---|---|
-| 🤖 Multiple AI modes | Compare LLM, RAG, AI Agent, and Agentic AI workflows. |
-| 📚 Hybrid RAG | Combines BM25 keyword retrieval and embedding-based retrieval using Reciprocal Rank Fusion (RRF). |
-| 📄 Policy citations | Uses retrieved policy content to support answers with relevant references. |
-| 🧰 Tool calling | Allows agents to invoke supported tools for information retrieval and analysis. |
-| 🧠 Multi-agent workflows | Supports coordinated, multi-step agent-based processing. |
-| 📊 Operations analytics | Provides operational data and analytics through the dashboard. |
-| 🛡️ Human approval | Routes proposed actions through an approval workflow instead of executing them automatically. |
-| 🔎 Execution traces | Displays workflow activity and supports investigation of agent runs. |
-| 💬 Run history and feedback | Supports reviewing previous runs and recording feedback. |
-| ⚡ Streaming responses | Uses Server-Sent Events (SSE) for streaming workflow updates. |
-| 🐳 Containerization | Includes Dockerfiles and Docker Compose configuration. |
-| 🧪 Automated checks | Includes backend tests, evaluation assets, and a GitHub Actions workflow. |
+- **Multiple AI interaction modes:** Explore direct LLM responses, Retrieval-Augmented Generation (RAG), tool-using AI agents, and agentic workflows.
+- **Hybrid RAG pipeline:** Combines BM25 keyword retrieval with embedding-based retrieval and Reciprocal Rank Fusion (RRF).
+- **Policy-grounded responses:** Retrieves relevant knowledge-base content to support answers with policy references.
+- **Dynamic tool selection and chaining:** Enables an agent to select and sequence supported tools to investigate operational questions.
+- **Operational data access:** Uses application tools to retrieve relevant order and support information.
+- **Human-in-the-loop approvals:** Provides an approval workflow for proposed operational actions.
+- **Streaming responses:** Uses Server-Sent Events (SSE) to stream agent events to the frontend.
+- **Execution traces:** Records workflow activity to help inspect agent runs and investigate outcomes.
+- **Analytics dashboard:** Presents operational metrics and insights.
+- **Run history and feedback:** Supports reviewing agent activity and recording feedback.
+- **Containerization:** Includes Docker configuration and Docker Compose support.
+- **Automated checks:** Includes backend tests, evaluation assets, and GitHub Actions workflow configuration.
 
----
+## 🧠 AI Interaction Modes
 
-## 🧩 AI Modes
-
-| Mode | How it works | Best suited for |
+| Mode | Description | Example use case |
 |---|---|---|
-| **LLM** | Generates an answer directly using the configured language model. | General questions and conversational responses. |
-| **RAG** | Retrieves relevant knowledge-base content and uses it to generate a grounded answer. | Policy questions and document-based support. |
-| **AI Agent** | Uses available tools to gather information and work through a request. | Operational queries requiring tool usage. |
-| **Agentic AI** | Coordinates a more structured workflow involving multiple steps, tools, or agents. | Complex support and operational investigations. |
+| **LLM** | Generates a response directly using the configured language model. | General conversational responses |
+| **RAG** | Retrieves relevant knowledge before generating a response. | Answering questions about support policies |
+| **AI Agent** | Selects and chains available tools to investigate a specific goal. | Checking an order and determining applicable compensation |
+| **Agentic AI** | Supports more structured, multi-step workflows. | Complex support investigations and coordinated tasks |
 
-These modes represent different approaches to AI-assisted support, from direct generation to retrieval and tool-driven workflows.
-
----
+The available capabilities depend on the selected mode, configured tools, and execution level. Multi-agent team delegation is distinct from single-agent tool chaining and requires the appropriate execution level.
 
 ## 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
-    A[User] --> B[React Frontend]
-    B --> C[FastAPI Backend]
+    U[User] --> FE[React + Vite Frontend]
+    FE --> API[FastAPI Backend]
 
-    C --> D{Select AI Mode}
+    API --> MODE{Selected AI Mode}
 
-    D --> E[LLM]
-    D --> F[RAG Pipeline]
-    D --> G[AI Agent]
-    D --> H[Agentic Workflow]
+    MODE --> LLM[Gemini LLM]
+    MODE --> RAG[Hybrid RAG Pipeline]
+    MODE --> AGENT[Tool-Calling Agent]
+    MODE --> WF[Agentic Workflow]
 
-    F --> I[Knowledge Base]
-    I --> J[BM25 + Embeddings]
-    J --> K[RRF Fusion]
+    RAG --> RET[BM25 + Embeddings]
+    RET --> RRF[Reciprocal Rank Fusion]
+    RRF --> KB[Knowledge Base]
 
-    G --> L[Supported Tools]
-    H --> L
+    AGENT --> TOOLS[Supported Tools]
+    WF --> TOOLS
+    TOOLS --> DB[Guarded Operational Data Access]
 
-    L --> M[Guarded SQLite Queries]
-    E --> N[Gemini LLM]
-    K --> N
-    L --> N
+    LLM --> RESP[Generated Response]
+    KB --> RESP
+    TOOLS --> RESP
 
-    N --> O[Response and Citations]
-    O --> P[Streaming and Execution Traces]
-    P --> B
+    RESP --> SSE[Streaming Events and Traces]
+    SSE --> FE
 
-    L --> Q[Proposed Action]
-    Q --> R[Human Approval]
+    TOOLS --> APPROVAL[Proposed Action]
+    APPROVAL --> HUMAN[Human Approval Workflow]
 ```
 
 ### Request lifecycle
 
-1. The user submits a question or operational request through the frontend.
-2. The backend processes the request according to the selected AI mode.
+1. A user submits a question or operational request through the frontend.
+2. The FastAPI backend processes the request using the selected AI mode.
 3. The RAG pipeline retrieves relevant knowledge when required.
-4. Agents use supported tools to gather information when appropriate.
-5. The language model generates a response based on the available context.
-6. Results, citations, and execution traces are returned to the interface.
-7. Proposed actions enter the approval workflow before any separately implemented execution step.
-
----
+4. The agent selects and invokes supported tools when the task requires additional information.
+5. The language model generates a response using the available context and tool results.
+6. The frontend receives streamed events, the final response, and relevant execution details.
+7. Proposed operational actions can be routed through the approval workflow.
 
 ## 🛠️ Technology Stack
 
@@ -131,71 +127,65 @@ flowchart TD
 | Backend | Python, FastAPI |
 | Language model | Google Gemini |
 | Retrieval | BM25, embeddings, Reciprocal Rank Fusion |
-| AI orchestration | Tool calling, agent workflows |
-| Data storage | SQLite |
-| API communication | HTTP APIs, Server-Sent Events (SSE) |
+| Agent orchestration | Tool calling, multi-step agent workflows |
+| Database | SQLite |
+| API communication | HTTP, Server-Sent Events |
 | Testing | Pytest, evaluation scripts |
 | CI/CD | GitHub Actions |
 | Containerization | Docker, Docker Compose |
-| Deployment configuration | Render and Vercel configuration |
-
----
+| Frontend hosting | Vercel |
+| Backend hosting | Render |
 
 ## 📁 Project Structure
 
 ```text
 support-copilot-ai-agent-rag/
-│
 ├── README.md
-│
 └── blinkit-copilot/
     ├── backend/
-    │   ├── main.py
-    │   ├── agents.py
-    │   ├── analytics.py
-    │   ├── config.py
-    │   ├── db.py
-    │   ├── llm.py
-    │   ├── ops.py
-    │   ├── queries.py
-    │   ├── rag.py
-    │   ├── tools.py
-    │   ├── requirements.txt
-    │   ├── Dockerfile
+    │   ├── app/
+    │   │   ├── main.py
+    │   │   ├── agents.py
+    │   │   ├── analytics.py
+    │   │   ├── config.py
+    │   │   ├── db.py
+    │   │   ├── llm.py
+    │   │   ├── ops.py
+    │   │   ├── queries.py
+    │   │   ├── rag.py
+    │   │   └── tools.py
     │   ├── tests/
-    │   ├── evals/
     │   ├── scripts/
-    │   └── data/
-    │
+    │   ├── evals/
+    │   ├── data/
+    │   ├── requirements.txt
+    │   └── Dockerfile
     ├── frontend/
     │   ├── src/
     │   ├── package.json
     │   ├── package-lock.json
     │   └── Dockerfile
-    │
     ├── .github/
     │   └── workflows/
-    │
     ├── docker-compose.yml
     ├── render.yaml
     └── .gitignore
 ```
 
-*Note: This tree highlights the main components. Exact filenames and additional directories may vary with the repository version.*
-
----
+*This tree highlights the main components; additional files may exist in the repository.*
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Install the following before running the application:
+Install the following tools before running the project locally:
 
-- Python 3.10 or a compatible version supported by the project's dependencies
-- Node.js and npm
 - Git
+- Python 3.12 or a compatible version supported by the dependencies
+- Node.js and npm
 - A Google Gemini API key
-- Docker and Docker Compose (optional)
+- A Tavily API key if web search is enabled
+- Docker Desktop (optional)
 
 ### 1. Clone the repository
 
@@ -206,6 +196,8 @@ cd support-copilot-ai-agent-rag/blinkit-copilot
 
 ### 2. Configure the backend
 
+Open a terminal in the backend directory:
+
 ```bash
 cd backend
 python -m venv .venv
@@ -213,13 +205,13 @@ python -m venv .venv
 
 Activate the virtual environment.
 
-**Windows PowerShell:**
+**Windows PowerShell**
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-**Git Bash:**
+**Git Bash**
 
 ```bash
 source .venv/Scripts/activate
@@ -231,165 +223,198 @@ Install dependencies:
 python -m pip install -r requirements.txt
 ```
 
-Create a `.env` file in the `backend` directory and configure the required environment variables.
+Create a `.env` file in `blinkit-copilot/backend/` and configure the environment variables listed below.
 
 ### 3. Start the backend
 
+From the `blinkit-copilot/backend/` directory, run:
+
 ```bash
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
-The backend will normally be available at:
+The backend should be available at:
 
-- API: `http://127.0.0.1:8000`
+- API base URL: `http://127.0.0.1:8000`
+- Health endpoint: `http://127.0.0.1:8000/api/health`
 - Interactive API documentation: `http://127.0.0.1:8000/docs`
 
-### 4. Start the frontend
+### 4. Configure and start the frontend
 
 Open a second terminal:
 
 ```bash
 cd blinkit-copilot/frontend
 npm install
+```
+
+Create a `.env` file in the frontend directory:
+
+```env
+VITE_API_URL=http://127.0.0.1:8000
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Open the local URL printed by Vite in the terminal, usually `http://localhost:5173`.
+Open the local URL printed by Vite, usually `http://localhost:5173`.
 
-Keep the backend running while using the frontend. If the frontend requires a backend URL, configure it using the environment variable expected by the frontend code.
+Keep the backend running while using the frontend.
 
----
+## ⚙️ Environment Configuration
 
-## 🔐 Environment Configuration
+Configure the following variables according to the implementation and the services you intend to use.
 
-Keep API credentials in local environment files. Never commit actual credentials to GitHub.
+### Backend: `blinkit-copilot/backend/.env`
 
-Example `backend/.env`:
-
-```dotenv
+```env
 GOOGLE_API_KEY=your_google_api_key_here
+TAVILY_API_KEY=your_tavily_api_key_here
+
+GEMINI_MODEL=gemini-3.1-flash-lite
+EMBED_MODEL=gemini-embedding-001
+
+CORS_ORIGINS=http://localhost:5173
+APP_API_KEY=
+RATE_LIMIT_PER_MIN=20
+AGENT_MAX_STEPS=8
 ```
 
-Add other variables only if required by your implementation. Refer to the backend configuration and `.env.example` for the exact variable names and defaults.
+- `GOOGLE_API_KEY`: credentials for the configured Gemini services.
+- `TAVILY_API_KEY`: optional search-service credentials when web search is enabled.
+- `GEMINI_MODEL`: configured generation model.
+- `EMBED_MODEL`: configured embedding model.
+- `CORS_ORIGINS`: allowed frontend origins.
+- `APP_API_KEY`: optional shared API key for protected endpoints.
+- `RATE_LIMIT_PER_MIN`: request rate limit per client.
+- `AGENT_MAX_STEPS`: configured maximum agent steps.
 
-**Before publishing:**
+Use the variable names and defaults defined by the project's configuration files. The values above are examples for local development, not production credentials.
 
-- Ensure `.env` files are excluded by `.gitignore`.
-- Keep `.env.example` limited to placeholder values.
-- Never include real API keys, database credentials, or private tokens.
-- Rotate any credential that has accidentally been exposed.
+### Frontend: `blinkit-copilot/frontend/.env`
 
----
+```env
+VITE_API_URL=http://127.0.0.1:8000
+```
+
+For the deployed frontend, `VITE_API_URL` should point to the deployed backend URL.
+
+**Security notes:**
+
+- Never commit `.env` files or actual API credentials.
+- Keep `.env.example` files restricted to placeholders.
+- Variables prefixed with `VITE_` are bundled into client-side code and must not contain private secrets.
+- If `APP_API_KEY` is unset, the current backend authentication function does not enforce that shared-key check. Protected endpoints may therefore become publicly accessible.
+- A public demo should contain no real customer data, private operational records, or sensitive credentials.
 
 ## 🧪 Testing
 
-Run the backend test suite from the `blinkit-copilot/backend` directory with the virtual environment activated:
+From `blinkit-copilot/backend/`, activate the virtual environment and run:
 
 ```bash
 pytest -q
 ```
 
-To run the tests with more detailed output:
+For detailed test output:
 
 ```bash
 pytest -v
 ```
 
-The repository also includes evaluation assets and scripts for checking aspects of the AI workflows.
+The repository also includes evaluation assets and scripts for validating AI workflows. Review the available tests and evaluation scripts for their specific coverage.
 
-For meaningful validation, test:
+Recommended areas to validate:
 
-- Direct LLM responses.
-- Retrieval relevance and policy-grounded answers.
-- Tool invocation and database-query restrictions.
-- Approval workflow behavior.
-- Error handling and streaming responses.
-
-Use the exact evaluation commands provided by the scripts in the repository.
-
----
-
-## 🛡️ Security and Guardrails
-
-Security is important when an AI system can access operational data or propose actions.
-
-The project includes security-oriented design choices such as:
-
-- **Read-only data access:** Supported database tools are designed for guarded, read-only queries.
-- **Human-in-the-loop approvals:** Proposed actions are presented for review rather than being executed automatically.
-- **Credential separation:** API keys belong in environment variables, not source code.
-- **Traceability:** Execution traces help inspect workflow behavior.
-- **Automated validation:** Tests and CI checks help identify regressions.
-
-These controls reduce risk but do not guarantee complete security. Production deployment would require additional authentication, authorization, input validation, rate limiting, audit logging, monitoring, and security testing.
-
----
+- LLM response generation
+- Retrieval relevance and policy-grounded answers
+- Tool selection and chaining
+- Guarded operational data access
+- Approval workflow behavior
+- Error handling and streaming responses
 
 ## ☁️ Deployment
 
-The repository includes Docker and deployment configuration for running the application in containerized or hosted environments.
+### Frontend: Vercel
+
+The frontend is deployed on Vercel.
+
+1. Configure the frontend root directory as `blinkit-copilot/frontend`.
+2. Select Vite as the framework preset.
+3. Configure `VITE_API_URL` to point to the deployed backend.
+4. Deploy the frontend and verify the browser can reach the backend.
+
+### Backend: Render
+
+The backend is deployed on Render.
+
+1. Configure the backend service using the repository's deployment configuration.
+2. Set the backend root directory and Docker build context according to the included Dockerfile and `render.yaml`.
+3. Configure the required environment variables in the hosting dashboard.
+4. Set `CORS_ORIGINS` to include the deployed frontend origin.
+5. Verify the health endpoint and inspect the service logs.
 
 ### Docker Compose
 
-From the directory containing `docker-compose.yml`, run:
+From `blinkit-copilot/`, run:
 
 ```bash
 docker compose up --build
 ```
 
-Stop the containers with:
+Stop the services with:
 
 ```bash
 docker compose down
 ```
 
-Ensure required environment variables are configured and check the Compose file for the correct service ports before accessing the application.
+Check `docker-compose.yml` for the configured ports and environment requirements.
 
-### Hosted deployment
+## 🛡️ Security and Guardrails
 
-Render and Vercel configuration is included in the repository. Deployment requires configuring the correct backend and frontend build settings, environment variables, and service URLs.
+The project explores several safety-oriented design practices:
 
-**Deployment configuration does not necessarily mean a live deployment is available.** Add public demo links here once the frontend and backend have been deployed and verified.
+- Environment-based credential configuration.
+- Guarded database tools.
+- Human review for proposed actions.
+- Execution traces for workflow inspection.
+- Request rate limiting.
+- Automated testing and CI checks.
 
-- **Live Demo:** Add verified URL
-- **API Documentation:** Add deployed API `/docs` URL
-- **Repository:** [GitHub Repository](https://github.com/Tanvi-1496/support-copilot-ai-agent-rag)
+These measures do not guarantee production-grade security. Before using the system with sensitive data, implement and validate appropriate authentication, authorization, access controls, secure secret management, audit logging, and production monitoring.
 
----
+AI-generated decisions should be verified against the relevant policy and operational records. A recommended action must not be treated as proof that a refund or other transaction was actually executed.
 
 ## ⚠️ Limitations
 
-- Response quality depends on the language model, retrieved context, and available tools.
-- Retrieval results depend on knowledge-base coverage and relevance.
-- SQLite is suitable for a lightweight demonstration but may not be sufficient for a high-concurrency production system.
-- Human approval and read-only tool restrictions do not replace a comprehensive production security architecture.
-- Live integrations and deployment availability depend on the configured environment.
-
----
+- Answer quality depends on model behavior, retrieved context, and tool availability.
+- Retrieval quality depends on the coverage and relevance of the knowledge base.
+- SQLite is intended for a lightweight demonstration and may not suit high-concurrency production workloads.
+- Tool access and workflow capabilities depend on the selected execution mode and configuration.
+- Approval workflows do not replace a complete authorization and transaction-control system.
+- Hosted service availability and response latency depend on the deployment environment and external providers.
+- This project is a demonstration, not an official customer support system.
 
 ## 🔮 Future Improvements
 
-- Add authentication and role-based access control.
-- Expand automated evaluation for answer quality and retrieval relevance.
-- Improve observability with structured logs and latency metrics.
-- Add more comprehensive audit trails for approval decisions.
-- Introduce production-ready persistent storage and deployment monitoring.
-- Add verified live-demo links and representative application screenshots.
-
----
+- Add robust authentication and role-based access control.
+- Expand retrieval and response-quality evaluation.
+- Improve observability, structured logging, and latency metrics.
+- Strengthen audit trails for approvals and operational actions.
+- Improve persistent storage and deployment resilience.
+- Add representative screenshots and additional end-to-end tests.
 
 ## 👩‍💻 Author
 
-**Tanvi Jaware**
+**Tanvi Jaware**  
+B.Tech in Information Technology
 
-B.Tech Information Technology
-
-- GitHub: [Tanvi-1496](https://github.com/Tanvi-1496)
-- Project: [Support Copilot AI](https://github.com/Tanvi-1496/support-copilot-ai-agent-rag)
+- **GitHub:** [Tanvi-1496](https://github.com/Tanvi-1496)
+- **Project Repository:** [Support Copilot AI](https://github.com/Tanvi-1496/support-copilot-ai-agent-rag)
+- **Live Demo:** [Open Application](https://support-copilot-ai-agent-rag.vercel.app/)
 
 ---
 
-<p align="center">
-  <b>Support Copilot AI</b><br/>
-  <sub>Exploring practical AI for customer support, knowledge retrieval, and operations.</sub>
-</p>
+*Built to explore practical applications of LLMs, retrieval-augmented generation, AI agents, and operational automation.*
